@@ -112,7 +112,7 @@ public class Metadata implements Serializable {
         }
 
         if(UPDATE.equals(messageCommand.getTypeCommand())) {
-            return new Metadata(messageCommand.getObjectId(), messageCommand.getArgs()[1], null,
+            return new Metadata(messageCommand.getObjectId(), messageCommand.getArgs()[0], null,
                     null, String.valueOf(messageCommand.getIdClient()), messageCommand.getTimeStamp());
         }
 
